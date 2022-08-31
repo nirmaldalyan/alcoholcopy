@@ -1,0 +1,41 @@
+<html>
+    <title>postformdatabaseenquirymodel method</title>
+    <H>userform</h>
+        <body>
+
+                    <form method="post" action={% url 'saveenquiry' %} > <!--action k liye url and name hona jruray hh-->
+                    {% csrf_token %}
+                        <div>
+                            <label1 for ="">name</label>
+                            <input type="text" name="num1"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        </div>
+                        <div>
+                            <label2 for ="">email</label>
+                            <input type="text" name="num2"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        <div>
+                        <div>
+                            <label3 for ="">phoneno</label>
+                            <input type="text" name="num3"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        </div>
+                        <div>
+                            <label4 for ="">websitename</label>
+                            <input type="text" name="num4"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        <div>
+                        <div>
+                            <label4 for ="text">message</label>
+                            <input type="text" name="num5"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        <div>
+                        <div class="pt-4">
+                            <button type="submit">save</button>
+                        </div>
+                        <div>
+                        output
+                        <input type="text" value="{{output}}"/> <!-- like this-->
+                        </div>
+                    </form>
+
+                    
+
+        </body>
+
+</html>

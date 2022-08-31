@@ -1,0 +1,29 @@
+<html>
+    <title>USERpostaction method</title>
+    <H>userform</h>
+        <body>
+
+                    <form method="post" action="{% url 'submitform' %}" >
+                    {% csrf_token %}
+                        <div>
+                            <label1 for ="">value1</label>
+                            <input type="text" name="num1"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        </div>
+                        <div>
+                            <label2 for ="">value2</label>
+                            <input type="text" name="num2"/> <!-- you can see vlaues on the same field after adding vlaue= {{n}}-->
+                        <div>
+                        <div class="pt-4">
+                            <button type="submit">save</button>
+                        </div>
+                        <div>
+                        output
+                        <input type="text" value="{{output}}"/> <!-- like this-->
+                        </div>
+                    </form>
+
+                    
+
+        </body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+nav{
+    height: 150px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 100px;
+    border-radius: 5px 70px;
+}
+nav .logo{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 15px;
+}
+nav ul li a{
+    color: rgb(246, 246, 253);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: #fff;
+    transition: all 0.3s ease;   
+    
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: #fff;
+    color: rgb(15, 137, 74);
+}
+nav .menu-btn i{
+    color: rgb(15, 240, 94);    
+    
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+@media (max-width: 940px){
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+    background: none;
+    color: cyan;
+}
+}
+
+/*dropdwon*/
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+
+}
+.menu_bar ul li{
+    padding: 10px 30px;
+    position: relative;
+}
+.menu_bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+    color: var(--color-primary);
+
+}
+.dropdown_menu{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+}    
+
+.dropdown_menu-1{
+    display: none;
+
+}
+.dropdown_menu ul li:hover .dropdown_menu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 175px;
+    background-color: black;}

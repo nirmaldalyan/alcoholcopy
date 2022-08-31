@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+{% block content %}
+            <!--start calculator page -->
+                <section>
+                                <form method="post">
+                                {% csrf_token %}
+                                    <label>value 1</label>
+                                    <input type="text" name="num1" class="form-control"/>
+                                    <label>select OPR....</label>
+                                    <select name="opr" class="form-control">
+                                        <option vlaue="+">+</option>
+                                        <option vlaue="-">-</option>
+                                        <option vlaue="*">*</option>
+                                        <option vlaue="/">/</option>
+                                    </select>
+                                    <label>value 2</label>
+                                    <input type="text" name="num2" class="form-control"/>
+                                    
+                                    <button type="submit">calculate</button>
+
+                                    <label>output</label>
+                                    <input type="text" value="{{c}}" class="form-control"/>
+                                </form>
+                          
+                </section>
+{% endblock %}

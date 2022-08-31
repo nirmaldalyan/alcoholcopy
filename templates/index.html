@@ -1,0 +1,127 @@
+{% include "headerresponsive.html"%}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/home2.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"  >
+
+</head>
+    <body>    
+        <div class="banner">
+            <div class="content">
+                <h1> welcome to home Home_page</h1>
+                <p> This is page content change whatever,Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Adipisci, modi.<br> you want to display on home Home_page</p>
+            </div>
+                
+        </div>
+        <!--<div class="first">
+            <div class="second">
+                <div class="third">
+                    <div class="left">
+                         
+                        {% for n in firstdata %}    
+                            <h4><a href="#">{{n.first_title}}</a></h4>
+                            <b>{{n.first_title}}</b><br>
+                            {{n.icon}}<br><i class="fa-solid fa-circle-three-quarters"></i><br>
+                            {{n.service_des}}
+                        {% endfor %}
+                    </div>
+                    <div class="left">
+                        <b>Second</b>
+                        {% for n in thirddata %}
+                        <p>
+                            {{n.icon}}   
+                        </p>
+                        {% endfor %}
+                    </div>
+                    <div class="left">
+                        <b>Third</b>
+                        {% for n in firstdata %}
+                        <p>
+                            {{n.service_des}}   
+                        </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <section class="learn-ease-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2 class="fw-700 mb-lg-4 mb-2 w-75 mx-auto">
+                                Build & level up your career whiel learning the way you wnat
+                            </h2>
+                            <p class="fa-18 fw-400 label-color-1">
+                                whether you want to learn ,offline, or at your pace,we have got it coverd for you!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-lg-5 pt-4">
+                        <div class="row align-items-stretch justify-content-center">
+                          <div class="col-lg-4 mb-3">
+                            <a class="career-card d-block decoration-none" title="Online Live Training" href="https://www.wscubetech.com/training-courses.html#online-courses">
+                              <div class="card-image overflow-hidden">
+                                <img src="static/image/section1.webp" class="img-fluid w-100" alt="Image" height="250"><div></div>
+                              </div>
+                              <div class="p-3 d-flex flex-column">
+                                <h3 class="mb-2 mb-lg-3 lh-24 label-color-2 fs-20 fw-600 mt-2">Online Live Training</h3>
+                                <p class="fw-400 fs-16 lh-26 label-color-1 mb-3 mb-lg-4"> Instructor-led online courses in India with
+                                  regular live classes, pro certification, hands-on projects, and job assistance. </p>
+                                <div class="mt-auto">
+                                  <span class="fs-14 cursor-pointer fw-600 text-decoration-none label-color-1 read-more text-uppercase" title="Get Started">Get Started <i class="fas fa-arrow-right ms-1"></i></span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-4 mb-3">
+                            <a class="career-card d-block decoration-none" title="Classroom Training in Jodhpur" href="https://www.wscubetech.com/training-courses.html#offline-courses">
+                              <div class="card-image overflow-hidden">
+                                <img src="static/image/section2.webp" class="img-fluid w-100" alt="Image" height="250">
+                              </div>
+                              <div class="p-3 d-flex flex-column">
+                                <h3 class="mb-2 mb-lg-3 lh-24 label-color-2 fs-20 fw-600 mt-2">Classroom Training in Jodhpur</h3>
+                                <p class="fw-400 fs-16 lh-26 label-color-1 mb-3 mb-lg-4">Rigorous offline training by expert instructors
+                                  in fully-digitized and distraction-free classrooms at our IT training institute in Jodhpur. </p>
+                                <div class="mt-auto">
+                                  <span class="fs-14 cursor-pointer fw-600 text-decoration-none label-color-1 read-more text-uppercase" title="Get Started">Get Started <i class="fas fa-arrow-right ms-1"></i></span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-4 mb-3">
+                            <a class="career-card d-block decoration-none" title="Self-Paced Certification Courses" href="https://www.wscubetech.com/training-courses.html#self-paced-courses">
+                              <div class="card-image overflow-hidden">
+                                <img src="static/image/section3.webp" class="img-fluid w-100" alt="Image" height="250">
+                              </div>
+                              <div class="p-3 d-flex flex-column">
+                                <h3 class="mb-2 mb-lg-3 lh-24 label-color-2 fs-20 fw-600 mt-2">Self-Paced Certification Courses</h3>
+                                <p class="fw-400 fs-16 lh-26 label-color-1 mb-3 mb-lg-4"> Pre-recorded online courses curated by
+                                  industry experts. The affordable learning experience with professional certification. </p>
+                                <div class="mt-auto">
+                                  <span class="fs-14 cursor-pointer fw-600 text-decoration-none label-color-1 read-more text-uppercase" title="Get Started">Get Started <i class="fas fa-arrow-right ms-1"></i></span>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+</html>
+{% endblock %}   
+{% include "footer.html"%}
